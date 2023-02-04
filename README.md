@@ -113,7 +113,7 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
     <td>Additional Dependencies</td>
     <td><em>toroC64.lib;LibWin324UEFI.lib</em></td>
     <td><em>toroC64.lib;kernel32.lib</em></td>
-    <td><em>kernel32.lib</em></td>
+    <td><em>kernel32.lib;legacy_stdio_definitions.lib</em></td>
   </tr>
   <tr>
     <td>Ignore All Default Libraries</td>
