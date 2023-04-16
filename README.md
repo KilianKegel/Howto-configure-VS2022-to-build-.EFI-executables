@@ -5,10 +5,10 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
 ![](PropertyPage.png)
 <table>
   <tr>
-    <td><b>Configuration Properties</b></td>
-    <td><b>Toro-C-Library UEFI .EFI</b></td>
-    <td><b>Toro-C-Library Win64 .EXE</b></td>
-    <td><b>MSFT LIBCMT.lib Win64 .EXE</b></td>
+    <td><b><h2>Configuration Properties</h2></b></td>
+    <td><b><h2>Toro-C-Library UEFI .EFI</h2></b></td>
+    <td><b><h2>Toro-C-Library Win64 .EXE</h2></b></td>
+    <td><b><h2>MSFT LIBCMT.lib Win64 .EXE</h2></b></td>
     </tr>
   <tr>
     <td colspan="4"><b>General</b></td>
