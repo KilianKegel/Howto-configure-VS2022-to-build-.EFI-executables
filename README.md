@@ -87,6 +87,13 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
     <td><em>Disable Security Check (/GS-)</em></td>
     <td><em></em></td>
   </tr>
+  <tr>
+    <td>Floating Point Model</td>
+    <td><em>Strict (fp:strict)</em></td>
+    <td><em>Strict (fp:strict)</em></td>
+    <td><em></em></td>
+  </tr>
+
 
   <tr>
     <td colspan="4"><b>Linker\General</b></td>
@@ -111,7 +118,7 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
   </tr>
   <tr>
     <td>Additional Dependencies</td>
-    <td><em>toroC64.lib;LibWin324UEFI.lib</em></td>
+    <td><em>toroC64.lib;LibWin324UEFI.lib</em><br><b>NOTE:</b> uncheck <b>Inherit from parent or project defaults</b>, prevent from <b>%AdditionalDependancies</b></td>
     <td><em>toroC64.lib;kernel32.lib</em></td>
     <td><em>kernel32.lib;legacy_stdio_definitions.lib</em></td>
   </tr>
