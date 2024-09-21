@@ -118,7 +118,7 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
   </tr>
   <tr>
     <td>Additional Dependencies</td>
-    <td><em>toroC64.lib;LibWin324UEFI.lib</em><br><b>NOTE:</b> uncheck <b>Inherit from parent or project defaults</b>, prevent from <b>%AdditionalDependancies</b></td>
+    <td><em>toroC64.lib;[LibWin324UEFI.lib](https://github.com/KilianKegel/Visual-LIBWIN32-for-UEFI?tab=readme-ov-file#visual-libwin32-for-uefi)</em><br><b>NOTE:</b> uncheck <b>Inherit from parent or project defaults</b>, prevent from <b>%AdditionalDependancies</b></td>
     <td><em>toroC64.lib;kernel32.lib</em></td>
     <td><em>kernel32.lib;legacy_stdio_definitions.lib</em></td>
   </tr>
