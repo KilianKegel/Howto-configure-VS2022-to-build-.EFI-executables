@@ -192,11 +192,7 @@ Define environment value **MYUSBSHARE** to tell your target <--> build machine e
     <td colspan="3"><b>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) & copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</b></td>
   </tr>
   <tr>
-    <td>Description</td>
-    <td colspan="3"><b>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) & copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</b></td>
-  </tr>
-  <tr>
-    <td>Command Line</td>
+    <td>Description<</td>
     <td colspan="3"><b>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</b></td>
   </tr>
   <tr>
