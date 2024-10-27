@@ -170,6 +170,39 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
     <td><em></em></td>
     <td><em></em></td>
   </tr>
+</table>
+
+## OPTIONAL IMPROVEMENT, SIMPLIFICATION 
+
+Define environment value **MYUSBSHARE** to tell your target <--> build machine exchange drive<br>
+
+![](https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC/blob/master/envedit.png)
+<table>
+  <tr>
+    <td><b><h2>Configuration Properties</h2></b></td>
+    <td><b><h2>Toro-C-Library UEFI .EFI</h2></b></td>
+    <td><b><h2>Toro-C-Library Win64 .EXE</h2></b></td>
+    <td><b><h2>MSFT LIBCMT.lib Win64 .EXE</h2></b></td>
+  </tr>
+  <tr>
+    <td colspan="4"><b>Build Events\Post-Build Event</b></td>
+  </tr>
+  <tr>
+    <td>Command Line</td>
+    <td colspan="3"><b>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) & copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</b></td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td colspan="3"><b>IF DEFINED MYUSBSHARE copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE) & copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(ProjectDir)</b></td>
+  </tr>
+  <tr>
+    <td>Command Line</td>
+    <td colspan="3"><b>copy /y "$(OutDir)$(TargetName)$(TargetExt)" $(MYUSBSHARE)</b></td>
+  </tr>
+  <tr>
+    <td>Use In Build</td>
+    <td colspan="3"><b>YES</b></td>
+  </tr>
 
 
 </table>
