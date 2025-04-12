@@ -8,7 +8,7 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
     <td><b><h2>Configuration Properties</h2></b></td>
     <td><b><h2>Toro-C-Library UEFI .EFI</h2></b></td>
     <td><b><h2>Toro-C-Library Win64 .EXE</h2></b></td>
-    <td><b><h2>MSFT LIBCMT.lib Win64 .EXE</h2></b></td>
+    <td><b><h2>Microsoft LIBCMT.lib Win64 .EXE</h2></b></td>
     </tr>
   <tr>
     <td colspan="4"><b>General</b></td>
@@ -67,8 +67,8 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
   </tr>
   <tr>
     <td>Preprocessor Definitions</td>
-    <td><em>_NO_CRT_STDIO_INLINE</em></td>
-    <td><em>_NO_CRT_STDIO_INLINE</em></td>
+    <td><em>_NO_CRT_STDIO_INLINE<br><B>NOTE: Microsoft inline functions n/a in toro C Library</B></em></td>
+    <td><em>_NO_CRT_STDIO_INLINE<br><B>NOTE: Microsoft inline functions n/a in toro C Library</B></em></td>
     <td><em></em></td>
   </tr>
 
@@ -79,6 +79,12 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
     <td>Runtime Library</td>
     <td><em>Multi-threaded (/MT)</em></td>
     <td><em>Multi-threaded (/MT)</em></td>
+    <td><em></em></td>
+  </tr>
+  <tr>
+    <td>Struct Member Alignment</td>
+    <td colspan="3">Default<br><B>NOTE: UEFI API access fails with any different setting</B></b></td>
+
     <td><em></em></td>
   </tr>
   <tr>
@@ -118,9 +124,9 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
   </tr>
   <tr>
     <td>Additional Dependencies</td>
-    <td><em>toroC64.lib;<a href="https://github.com/KilianKegel/Visual-LIBWIN32-for-UEFI?tab=readme-ov-file#visual-libwin32-for-uefi">LibWin324UEFI.lib</a></em><br><b>NOTE:</b> uncheck <b>Inherit from parent or project defaults</b>, prevent from <b>%AdditionalDependancies</b></td>
-    <td><em>toroC64.lib;kernel32.lib</em></td>
-    <td><em>kernel32.lib;legacy_stdio_definitions.lib</em></td>
+    <td><em>toroC64.lib; <a href="https://github.com/KilianKegel/Visual-LIBWIN32-for-UEFI?tab=readme-ov-file#visual-libwin32-for-uefi">LibWin324UEFI.lib</a></em><br><b>NOTE:</b> uncheck <b>Inherit from parent or project defaults</b>, prevent from <b>%AdditionalDependancies</b></td>
+    <td><em>toroC64.lib; kernel32.lib</em></td>
+    <td><em>kernel32.lib; legacy_stdio_definitions.lib</em></td>
   </tr>
   <tr>
     <td>Ignore All Default Libraries</td>
