@@ -2,12 +2,14 @@
 Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
 
 ## CHECK LIST VS2022 target cross configuration  
-![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/PropertyPage.png)
+
+![pic](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/PropertyPage.png)
+
 <table>
   <tr>
     <td><b><h2>Configuration Properties</h2></b></td>
-    <td><b><h2>Toro-C-Library UEFI .EFI</h2></b></td>
-    <td><b><h2>Toro-C-Library Win64 .EXE</h2></b></td>
+    <td><b><h2>toro-C-Library UEFI .EFI</h2></b></td>
+    <td><b><h2>toro-C-Library Win64 .EXE</h2></b></td>
     <td><b><h2>Microsoft LIBCMT.lib Win64 .EXE</h2></b></td>
     </tr>
   <tr>
@@ -38,9 +40,9 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
   </tr>
   <tr>
   <td>Character Set</td>
-  <td><em>Use Unicode Character Set</em></td>
-  <td><em>Use Unicode Character Set</em></td>
-  <td><em>Use Unicode Character Set</em></td>
+  <td><em>Use Multi-Byte Character Set</em></td>
+  <td><em>Use Multi-Byte Character Set</em></td>
+  <td><em>Use Multi-Byte Character Set</em></td>
   </tr>
   
   <tr>
@@ -180,14 +182,14 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
 
 ## OPTIONAL IMPROVEMENT, SIMPLIFICATION 
 
-Define environment value **MYUSBSHARE** to tell your target <--> build machine exchange drive<br>
+Define environment value **MYUSBSHARE** to tell your **exchange drive**
 
 ![](https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC/blob/master/envedit.png)
 <table>
   <tr>
     <td><b><h2>Configuration Properties</h2></b></td>
-    <td><b><h2>Toro-C-Library UEFI .EFI</h2></b></td>
-    <td><b><h2>Toro-C-Library Win64 .EXE</h2></b></td>
+    <td><b><h2>toro-C-Library UEFI .EFI</h2></b></td>
+    <td><b><h2>toro-C-Library Win64 .EXE</h2></b></td>
     <td><b><h2>MSFT LIBCMT.lib Win64 .EXE</h2></b></td>
   </tr>
   <tr>
@@ -243,8 +245,6 @@ Define environment value **MYUSBSHARE** to tell your target <--> build machine e
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_29.png)
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_30.png)
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_31.png)
-![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_32.png)
-![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_33.png)
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_34.png)
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_35.png)
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_36.png)
