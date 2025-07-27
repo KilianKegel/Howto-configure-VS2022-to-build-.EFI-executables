@@ -17,9 +17,9 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
   </tr>
   <tr>
   <td>Output Directory</td>
-  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\</em></td>
-  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\</em></td>
-  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\</em></td>
+  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
+  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
+  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
   </tr>
 
   <tr>
