@@ -3,7 +3,7 @@ Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
 
 ## CHECK LIST VS2026 target cross configuration  
 
-![pic](https://github.com/KilianKegel/Howto-configure-VS2026-to-build-.EFI-executables/blob/main/images/PropertyPage.png)
+![pic](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/PropertyPage.png)
 
 <table>
   <tr>
