@@ -1,9 +1,9 @@
-# HowTo-configure-VS2022-to-build-.EFI-executables
-Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
+# HowTo-configure-VS2026-to-build-.EFI-executables
+Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
 
-## CHECK LIST VS2022 target cross configuration  
+## CHECK LIST VS2026 target cross configuration  
 
-![pic](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/PropertyPage.png)
+![pic](https://github.com/KilianKegel/Howto-configure-VS2026-to-build-.EFI-executables/blob/main/images/PropertyPage.png)
 
 <table>
   <tr>
@@ -69,9 +69,9 @@ Step-by-step configuration to enable VS2022 to create UEFI .EFI executables
   </tr>
   <tr>
     <td>Preprocessor Definitions</td>
-    <td><em>_NO_CRT_STDIO_INLINE<br><B>NOTE: Microsoft inline functions n/a in toro C Library</B></em></td>
-    <td><em>_NO_CRT_STDIO_INLINE<br><B>NOTE: Microsoft inline functions n/a in toro C Library</B></em></td>
-    <td><em></em></td>
+    <td><em>_NO_CRT_STDIO_INLINE<br>_CRT_SECURE_NO_WARNINGS<BR><B>NOTE: Microsoft inline functions n/a in toro C Library</B></em></td>
+    <td><em>_NO_CRT_STDIO_INLINE<br>_CRT_SECURE_NO_WARNINGS<BR><B>NOTE: Microsoft inline functions n/a in toro C Library</B></em></td>
+    <td><em>_CRT_SECURE_NO_WARNINGS<BR><B>NOTE: <a href="https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1570.pdf#PAGE=600">Bounds Checking Interface</a>  n/a in toro C Library</B></em></td>
   </tr>
 
   <tr>
