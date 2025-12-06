@@ -212,7 +212,7 @@ Define environment value **MYUSBSHARE** to tell your **exchange drive**
 </table>
 
 1. Get and install Visual Studio:<br>
-  https://github.com/KilianKegel/HowTo-setup-an-UEFI-Development-PC#install-visual-studio-2022
+  https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC?tab=readme-ov-file#install-visual-studio
 2. Follow the screenshots below:<br><br>
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_1.png)
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_2.png)
