@@ -11,45 +11,42 @@ Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
     <td><b><h2>toro-C-Library UEFI .EFI</h2></b></td>
     <td><b><h2>toro-C-Library Win64 .EXE</h2></b></td>
     <td><b><h2>Microsoft LIBCMT.lib Win64 .EXE</h2></b></td>
-    </tr>
+  </tr>
   <tr>
     <td colspan="4"><b>General</b></td>
   </tr>
   <tr>
-  <td>Output Directory</td>
-  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
-  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
-  <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
+    <td>Output Directory</td>
+    <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
+    <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
+    <td><em>$(SolutionDir)$(Platform)\$(Configuration)\<br>or<br>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</em></td>
   </tr>
-
   <tr>
-  <td>Intermediate Directory</td>
-  <td><em>$(Platform)\$(Configuration)\</em></td>
-  <td><em>$(Platform)\$(Configuration)\</em></td>
-  <td><em>$(Platform)\$(Configuration)\</em></td>
+    <td>Intermediate Directory</td>
+    <td><em>$(Platform)\$(Configuration)\</em></td>
+    <td><em>$(Platform)\$(Configuration)\</em></td>
+    <td><em>$(Platform)\$(Configuration)\</em></td>
   </tr>
   <tr>
     <td colspan="4"><b>Advanced</b></td>
   </tr>
-
   <tr>
-  <td>Target File Extention</td>
-  <td><em>.EFI</em></td>
-  <td><em>.EXE</em></td>
-  <td><em>.EXE</em></td>
+    <td>Target File Extention</td>
+    <td><em>.EFI</em></td>
+    <td><em>.EXE</em></td>
+    <td><em>.EXE</em></td>
   </tr>
   <tr>
-  <td>Character Set</td>
-  <td><em>Use Multi-Byte Character Set</em></td>
-  <td><em>Use Multi-Byte Character Set</em></td>
-  <td><em>Use Multi-Byte Character Set</em></td>
+    <td>Character Set</td>
+    <td><em>Use Multi-Byte Character Set</em></td>
+    <td><em>Use Multi-Byte Character Set</em></td>
+    <td><em>Use Multi-Byte Character Set</em></td>
   </tr>
-  
   <tr>
-  <td>Whole Program Optimization</td>
-  <td><em>No Whole Program Optimization</em></td>
-  <td><em>No Whole Program Optimization</em></td>
-  <td><em>No Whole Program Optimization</em></td>
+    <td>Whole Program Optimization</td>
+    <td><em>No Whole Program Optimization</em></td>
+    <td><em>No Whole Program Optimization</em></td>
+    <td><em>No Whole Program Optimization</em></td>
   </tr>
 
   <tr>
@@ -73,7 +70,6 @@ Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
     <td><em>_NO_CRT_STDIO_INLINE<br>_CRT_SECURE_NO_WARNINGS<BR><B>NOTE: Microsoft inline functions n/a in toro C Library</B></em></td>
     <td><em>_CRT_SECURE_NO_WARNINGS<BR><B>NOTE: <a href="https://www.open-std.org/JTC1/SC22/WG14/www/docs/n1570.pdf#PAGE=600">Bounds Checking Interface</a>  n/a in toro C Library</B></em></td>
   </tr>
-
   <tr>
     <td colspan="4"><b>C/C++\Code Generation</b></td>
   </tr>
@@ -85,10 +81,9 @@ Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
   </tr>
   <tr>
     <td>Struct Member Alignment</td>
-    <td colspan="3">Default<br><B>NOTE: UEFI API access fails with any different setting</B></b></td>
-
-    <td><em></em></td>
+    <td colspan="4">Default<br><B>NOTE: UEFI API access fails with any different setting</B></b></td>
   </tr>
+
   <tr>
     <td>Security Check</td>
     <td><em>Disable Security Check (/GS-)</em></td>
@@ -101,26 +96,22 @@ Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
     <td><em>Strict (fp:strict)</em></td>
     <td><em></em></td>
   </tr>
-
-
   <tr>
     <td colspan="4"><b>Linker\General</b></td>
   </tr>
+  
   <tr>
     <td>Output File</td>
     <td><em>$(OutDir)$(TargetName)$(TargetExt)</em></td>
     <td><em>$(OutDir)$(TargetName)$(TargetExt)</em></td>
     <td><em>$(OutDir)$(TargetName)$(TargetExt)</em></td>
   </tr>
-
   <tr>
     <td>Additional Library Directories</td>
     <td><em>$(SolutionDir)Lib</em></td>
     <td><em>$(SolutionDir)Lib</em></td>
     <td><em>$(SolutionDir)Lib</em></td>
   </tr>
-
-
   <tr>
     <td colspan="4"><b>Linker\Input</b></td>
   </tr>
@@ -130,6 +121,7 @@ Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
     <td><em>toroC64.lib; kernel32.lib</em></td>
     <td><em>kernel32.lib; legacy_stdio_definitions.lib</em></td>
   </tr>
+
   <tr>
     <td>Ignore All Default Libraries</td>
     <td><em>Yes (/NODEFAULTLIB)</em></td>
@@ -154,7 +146,7 @@ Step-by-step configuration to enable VS2026 to create UEFI .EFI executables
     <td>SubSystem</td>
     <td><em>EFI Application (/SUBSYSTEM:EFI_APPLICATION)</em></td>
     <td><em>Console (/SUBSYSTEM:CONSOLE)</em></td>
-    <td><em>Console (/SUBSYSTEM:CONSOLE)</em></td>
+    <td><em></em></td>
   </tr>
   
   <tr>
@@ -207,12 +199,14 @@ Define environment value **MYUSBSHARE** to tell your **exchange drive**
     <td>Use In Build</td>
     <td colspan="3"><b>YES</b></td>
   </tr>
-
+-->
 
 </table>
 
 1. Get and install Visual Studio:<br>
+
   https://github.com/KilianKegel/Howto-setup-a-UEFI-Development-PC?tab=readme-ov-file#install-visual-studio
+
 2. Follow the screenshots below:<br><br>
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_1.png)
 ![](https://github.com/KilianKegel/Howto-configure-VS2022-to-build-.EFI-executables/blob/main/images/HOWTOCONFIGVS2022_2.png)
