@@ -199,8 +199,6 @@ Define environment value **MYUSBSHARE** to tell your **exchange drive**
     <td>Use In Build</td>
     <td colspan="3"><b>YES</b></td>
   </tr>
--->
-
 </table>
 
 1. Get and install Visual Studio:<br>
